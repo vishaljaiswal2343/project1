@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>profile</title>
+</head>
+<style>
+.container{
+    width: 300px;
+    height: 350px;
+   
+    border-radius: 15px;
+    margin: 20px auto;
+
+}
+.profile_div{
+    width: 100%;
+    height: 110px;
+    background-color: rgb(104, 104, 255);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+   
+}
+.profile_photo{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(151, 46, 46);
+    border-radius: 50%;
+    border: 5px solid  rgb(104, 104, 255);
+    position: absolute;
+   margin-top: 1.5rem;
+}
+.profile_photo .image{
+    width: 99%;
+    height: 99%;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -1px;
+    overflow: hidden;
+}
+.image img{
+    width: 100%;
+}
+.info{
+    width: 100%;
+    height: 240px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.026);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.096);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.info h1{
+    font-size: 20px;
+    font-family: sans-serif;
+   position: relative;
+   top: 7px;
+   color: rgba(0, 0, 0, 0.797);
+}
+.info p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.622);
+    font-weight: 600;
+    position: relative;
+    top: -15px;
+}
+.social_m{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social_m .facebook i{
+    font-size: 35px;
+    color: rgba(0, 0, 139, 0.76);
+    cursor: pointer;
+   
+}
+.social_m .twitter{
+    width: 33px;
+    background-color: rgb(0, 183, 255);
+    height: 33px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.twitter i{
+    color: white;
+    font-size: 20px;
+}
+.instagram{
+    width: 33px;
+    height: 33px;
+    background-color: rgb(251, 5, 46);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.instagram i{
+    font-size: 24px;
+    color: white;
+}
+.youtube{
+    width: 33px;
+    height: 33px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.youtube i{
+    font-size: 20px;
+    color: white;
+}
+.button{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 15px;
+}
+.button .subscribe , .massage{
+    width: 100px;
+    height: 30px;
+    background-color:  rgb(104, 104, 255);
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reactions{
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 2.3rem;
+}
+.line{
+    width: 2px;
+    height: 18px;
+    background-color: rgba(0, 0, 0, 0.34);
+}
+</style>
+<body>
+    <div class="container">
+       <div class="profile_div">
+            <div class="profile_photo">
+              <div class="image">
+                <img src="https://media.licdn.com/dms/image/C4E03AQFAoY-MSYJsCA/profile-displayphoto-shrink_800_800/0/1600154261501?e=2147483647&v=beta&t=y6fNVbickwFxsfp0r6qVqhDz2_wRubRatZZX_qxFG_0" alt="">
+              </div>
+            </div>
+        </div>
+        <div class="info">
+            <h1>Aman Dhattarwal </h1>
+            <p>founder - Apna college</p>
+            <div class="social_m">
+               <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+               <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+               <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
+               <div class="youtube"><i class="fa-brands fa-youtube"></i></div>
+            </div>
+            <div class="button">
+               <div class="subscribe">Subscribe</div>
+               <div class="massage">Massage</div>
+            </div>
+            <div class="reactions">
+                <i style="cursor: pointer;" class="fa-regular fa-heart"></i>
+               <p style="margin-left: -10px; cursor: pointer;">60k</p>
+               <div class="line"></div>
+               <i style="cursor: pointer;" class="fa-regular fa-comment"></i>
+               <p style="margin-left: -10px; cursor: pointer;">20k</p>
+               <div class="line"></div>
+               <i style="cursor: pointer;"  class="fa-regular fa-share-from-square"></i>
+               <p style="margin-left: -10px; cursor: pointer;">12k</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
